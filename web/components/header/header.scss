@@ -1,4 +1,21 @@
 .header {
-    background: $black;
-    color: $white;
+    background-color: rgba($blue, 0.5);
+    color: $teal;
+    height: $header-h;
+    text-align: center;
+}
+
+
+.header__inner {
+    @extend %h-padding;
+}
+
+.header__title {
+    @extend %h1-a;
+    position: relative;
+    top: 36px;
+}
+
+.header__link {
+    @extend %h5;
 }

@@ -1,0 +1,9 @@
+.gifts {
+    color: $dijon;
+}
+
+
+.gifts__inner {
+    @extend %slice;
+    @include row;
+}

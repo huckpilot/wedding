@@ -1,0 +1,15 @@
+.celebrate {
+    color: $teal;
+    margin-top: -$header-h;
+    padding-top: $header-h;
+    text-align: center;
+}
+
+.celebrate__inner {
+    @extend %slice;
+    @include row;
+}
+
+.celebrate__title {
+    @extend %big;
+}

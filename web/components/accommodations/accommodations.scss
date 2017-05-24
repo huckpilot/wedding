@@ -1,0 +1,9 @@
+.accommodations {
+    color: $mint;
+}
+
+.accommodations__inner {
+    @extend %slice;
+    @include row;
+}
+

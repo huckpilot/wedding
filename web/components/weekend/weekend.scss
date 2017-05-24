@@ -1,0 +1,8 @@
+.weekend {
+    color: $salmon;
+}
+
+.weekend__inner {
+    @extend %slice;
+    @include row;
+}

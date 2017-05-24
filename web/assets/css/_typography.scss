@@ -13,9 +13,23 @@ a {
     cursor: pointer;
 }
 
+%big {
+    font-size: 126px;
+    font-weight: bold;
+}
+
+%h1-a {
+    font-size: 48px;
+    font-weight: bold;
+}
+
 %h1 {
     font-size: 20px;
     font-weight: bold;
+}
+
+%h5 {
+    font-size: 12px;
 }
 
 @include media($tablet) {

@@ -1,0 +1,9 @@
+.transportation {
+    color: $purple;
+}
+
+
+.transportation__inner {
+    @extend %slice;
+    @include row;
+}

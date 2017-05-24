@@ -2,9 +2,16 @@
 
 // Colors
 $black: #000;
-$blue: #00f;
-$spot-color: $blue;
-$white: #fff;
+$blue: #00c9ea;
+$teal: #00ffeb;
+$dijon: #ffd999;
+$salmon: #f26c77;
+$sky: #4a90e2;
+$mint: #92fff4;
+$grass: #50e3c2;
+$purple: #49426e;
+$cream: #f26c77;
+$spot-color: $teal;
 
 // Grid
 $column: 100px;
@@ -31,6 +38,8 @@ $desktop: new-breakpoint(max-width $desktop-size);
 
 
 // More variables
+$header-h: 156px;
 $power2-ease-out: cubic-bezier(0.2, 0.485, 0.205, 1);
-$site-gutter: 20px;
+$site-gutter: 144px;
+$site-gutter-mobile: 40px;
 $transition-speed: 0.3s;

@@ -1,0 +1,9 @@
+.closing {
+    color: $teal;
+}
+
+
+.closing__inner {
+    @extend %slice;
+    @include row;
+}
