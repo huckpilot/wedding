@@ -1,3 +1,9 @@
+@include font-face('apercu', '../fonts/Apercu/apercu', $file-formats: eot ttf woff);
+@include font-face('apercu-light', '../fonts/Apercu/apercu-light', $file-formats: eot ttf woff);
+@include font-face('apercu-medium', '../fonts/Apercu/apercu-medium', $file-formats: eot ttf woff);
+@include font-face('apercu-mono', '../fonts/Apercu/apercu-mono', $file-formats: eot ttf woff);
+@include font-face('apercu-bold', '../fonts/Apercu/apercu-bold', $file-formats: eot ttf woff);
+
 // Reset headings
 h1,
 h2,
@@ -14,23 +20,48 @@ a {
 }
 
 %big {
-    font-size: 126px;
-    font-weight: bold;
-}
-
-%h1-a {
-    font-size: 48px;
-    font-weight: bold;
+    font-family: 'apercu-medium';
+    font-size: 200px;
 }
 
 %h1 {
+    font-family: 'apercu-bold';
+    font-size: 55px;
+}
+
+%h1-a {
+    font-family: 'apercu';
+    font-size: 55px;
+}
+
+%h2 {
+    font-family: 'apercu';
+    font-size: 48px;
+}
+
+%h3 {
+    font-family: 'apercu';
+    font-size: 36px;
+    letter-spacing: 1.5555555556;
+}
+
+%h3-a {
+    font-family: 'apercu-bold';
+    font-size: 36px;
+    letter-spacing: 1.5555555556;
+}
+
+%h4 {
+    font-family: 'apercu';
+    font-size: 24px;
+    letter-spacing: 0.6;
+}
+
+%h5 {
     font-size: 20px;
     font-weight: bold;
 }
 
-%h5 {
-    font-size: 12px;
-}
 
 @include media($tablet) {
 

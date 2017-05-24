@@ -7,3 +7,13 @@
     @extend %slice;
     @include row;
 }
+
+
+.transportation__title {
+    @extend %h1;
+    text-align: center;
+}
+
+.transportation__item__body {
+    @extend %h3;
+}

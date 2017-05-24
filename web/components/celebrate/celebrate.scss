@@ -13,3 +13,13 @@
 .celebrate__title {
     @extend %big;
 }
+
+.celebrate__date {
+    @extend %h1;
+}
+
+.celebrate__location {
+    @extend %h1-a;
+}
+
+

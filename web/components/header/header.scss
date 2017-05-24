@@ -1,7 +1,6 @@
 .header {
     background-color: rgba($blue, 0.5);
     color: $teal;
-    height: $header-h;
     text-align: center;
 }
 
@@ -11,11 +10,21 @@
 }
 
 .header__title {
-    @extend %h1-a;
+    @extend %h2;
     position: relative;
-    top: 36px;
+    padding-top: 24px;
+}
+
+.header__menu {
+    margin-top: 24px;
 }
 
 .header__link {
-    @extend %h5;
+    @extend %h4;
+    @include padding(7px 5px);
+    color: $teal;
+
+    & + & {
+        margin-left: 27px;
+    }
 }

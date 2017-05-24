@@ -7,3 +7,12 @@
     @include row;
 }
 
+.accommodations__title {
+    @extend %h1;
+    text-align: center;
+}
+
+.accommodations__description {
+    @extend %h3;
+    margin-top: 44px;
+}

@@ -6,3 +6,21 @@
     @extend %slice;
     @include row;
 }
+
+.weekend__title {
+    @extend %h1;
+    text-align: center;
+}
+
+.weekend__description {
+    @extend %h3;
+    margin-top: 44px;
+}
+
+.weekend__benchmarks__date {
+    @extend %h1;
+}
+
+.weekend__benchmarks__title {
+    @extend %h3-a;
+}
