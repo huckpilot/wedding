@@ -68,9 +68,9 @@ angular.module('ua5App', [
                 $rootScope.$on('$stateChangeSuccess', function(e, toState, toStateParams, fromState) {
                     var regex = /^([^.]*).*/;
                     var toStateName = toState.name;
-                    var fromStateName = fromState.name;
+                    // var fromStateName = fromState.name;
                     var toStateParent = toStateName.match(regex)[1];
-                    var fromStateParent = fromStateName.match(regex)[1];
+                    // var fromStateParent = fromStateName.match(regex)[1];
                     $rootScope.pageClass = 'page-' + toState.name.replace('.', '-');
                     // If going directly to child from non-parent, just show
                     // child.

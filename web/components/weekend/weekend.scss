@@ -4,7 +4,35 @@
 
 .weekend__inner {
     @extend %slice;
-    @include row;
+    @include outer-container(1000px);
+
+    @include media($phablet) {
+        @include padding(60px 20px 68px);
+    }
+}
+
+.weekend__image-container {
+    width: 100%;
+    text-align: center;
+}
+
+.weekend__image {
+    @include svg(89px, 89px);
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    z-index: 1;
+}
+
+.weekend__benchmarks__title,
+.weekend__benchmarks__description,
+.weekend__benchmarks__body {
+    display: block;
+}
+
+.weekend__benchmarks__item__inner {
+    width: 100%;
+    // padding: 25px;
 }
 
 .weekend__title {
@@ -17,10 +45,26 @@
     margin-top: 44px;
 }
 
-.weekend__benchmarks__date {
-    @extend %h1;
-}
-
 .weekend__benchmarks__title {
     @extend %h3-a;
+}
+
+.weekend__benchmark {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include outer-container;
+}
+
+.weekend__benchmarks__date,
+.weekend__benchmarks__item {
+    @include display(flex);
+    width: 50%;
+
+    @include media($phablet) {
+        width: 100%;
+    }
+}
+
+.weekend__benchmarks__date {
+    @extend %h1;
 }

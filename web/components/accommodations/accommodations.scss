@@ -4,7 +4,20 @@
 
 .accommodations__inner {
     @extend %slice;
+    @include outer-container(1000px);
     @include row;
+
+    @include media($phablet) {
+        @include padding(60px 20px 68px);
+    }
+}
+
+.accommodations__image {
+    @include svg(106px, 108px);
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    z-index: 1;
 }
 
 .accommodations__title {
@@ -15,4 +28,19 @@
 .accommodations__description {
     @extend %h3;
     margin-top: 44px;
+}
+
+.accomodations__city__title {
+    @extend %h1;
+}
+
+.accomodations__city__options {
+    @include transition(all 2s ease);
+    overflow: hidden;
+    max-height: 0;
+
+    &.accomodations__city__options--open {
+        @include transition(all 2s ease);
+        max-height: 50em;
+    }
 }

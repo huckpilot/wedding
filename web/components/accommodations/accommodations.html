@@ -1,5 +1,13 @@
 <div class="accommodations">
 	<div class="accommodations__inner">
+        <div class="weekend__image-container">
+            <div class="weekend__image">
+                <div
+                    class="weekend__image__icon"
+                    ng-include="'assets/img/place.svg'">
+                </div>
+            </div>
+        </div>
         <div class="accommodations__title">
             Where To Stay
         </div>
@@ -10,6 +18,17 @@
             <span>
                 We’ve put together wishlists of Airbnb’s that we’d recommend, along with hotel options if that’s more your style.
             </span>
+        </div>
+        <div class="accomodations__cities">
+            <div
+                class="accomodations__city-item"
+                ng-repeat="city in cities">
+                <div
+                    class="accomodations__city-city"
+                    place
+                    place-data="city">
+                </div>
+            </div>
         </div>
     </div>
 </div>

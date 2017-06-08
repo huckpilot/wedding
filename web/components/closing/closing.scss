@@ -5,5 +5,35 @@
 
 .closing__inner {
     @extend %slice;
+    @include outer-container(1000px);
     @include row;
+
+    @include media($phablet) {
+        @include padding(60px 20px 68px);
+    }
+}
+
+.closing__body {
+    @extend %h3;
+}
+
+.closing-sendoff,
+.closing-name {
+    text-align: center;
+}
+
+.closing-sendoff {
+    @extend %h1;
+}
+
+.closing-name {
+    @extend %h1;
+}
+
+.closing__image {
+    @include svg(111px, 119px);
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    z-index: 1;
 }

@@ -2,12 +2,23 @@
     color: $purple;
 }
 
-
 .transportation__inner {
     @extend %slice;
+    @include outer-container(800px);
     @include row;
+
+    @include media($phablet) {
+        @include padding(60px 20px 68px);
+    }
 }
 
+.transportation__image {
+    @include svg(141px, 119px);
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    z-index: 1;
+}
 
 .transportation__title {
     @extend %h1;
@@ -16,4 +27,13 @@
 
 .transportation__item__body {
     @extend %h3;
+}
+
+.transportation__item__subtitle {
+    @extend %h1;
+}
+
+.transportation__note {
+    @extend %h4-a;
+    margin-top: 46px;
 }

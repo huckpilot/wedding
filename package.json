@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UseAllFive/wedding.git"
+    "url": "git+https://github.com/huckpilot/wedding.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/UseAllFive/wedding/issues"
+    "url": "https://github.com/huckpilot/wedding/issues"
   },
-  "homepage": "https://github.com/UseAllFive/wedding#readme",
+  "homepage": "https://github.com/huckpilot/wedding#readme",
   "devDependencies": {
     "chalk": "1.1.3",
     "connect-modrewrite": "0.9.0",

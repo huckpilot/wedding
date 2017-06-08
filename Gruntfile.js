@@ -78,19 +78,7 @@ module.exports = function(grunt) {
             options: {
                 sourceMap: true,
                 sourceMapIncludeSources: true,
-                banner: '/*\n' +
-                '*    Built by                                           \n' +
-                '*                               ____   _____            \n' +
-                '*      __  __________    ____ _/ / /  / __(_)   _____   \n' +
-                '*     / / / / ___/ _ \\  / __ `/ / /  / /_/ / | / / _ \\  \n' +
-                '*    / /_/ (__  )  __/ / /_/ / / /  / __/ /| |/ /  __/  \n' +
-                '*    \\__,_/____/\\___/  \\__,_/_/_/  /_/ /_/ |___/\\___/   \n' +
-                '*                                                       \n' +
-                '* \n' +
-                '*    http://useallfive.com                                                                \n' +
-                '*\n' +
-                '*    <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> \n' +
-                '*/'
+                banner: ''
             },
             'js-app': {
                 src: config.files.js.app.dest,
@@ -257,7 +245,7 @@ module.exports = function(grunt) {
         'watch'
     ];
     grunt.registerTask('default', devTasks);
-    
+
     buildTasks = [
         'ngtemplates:app',
         'concat:scss',

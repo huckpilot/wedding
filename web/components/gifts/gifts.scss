@@ -2,8 +2,52 @@
     color: $dijon;
 }
 
-
 .gifts__inner {
     @extend %slice;
+    @include outer-container(1000px);
     @include row;
+
+    @include media($phablet) {
+        @include padding(60px 20px 68px);
+    }
+}
+
+.gifts__image {
+    @include svg(114px, 106px);
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    z-index: 1;
+}
+
+.gifts__title {
+    @extend %h1;
+    text-align: center;
+}
+
+.gifts__body {
+    @extend %h3;
+    margin-top: 44px;
+}
+
+.gifts__link {
+    text-align: center;
+    display: block;
+
+    & + & {
+        border-top: 1px solid $dijon;
+    }
+}
+
+.gift__title {
+    @extend %h1;
+}
+
+.gift__desc {
+    @extend %h4-a;
+}
+
+.gift__title,
+.gift__desc {
+    display: block;
 }

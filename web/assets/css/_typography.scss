@@ -21,7 +21,7 @@ a {
 
 %big {
     font-family: 'apercu-medium';
-    font-size: 200px;
+    font-size: 160px;
 }
 
 %h1 {
@@ -40,7 +40,7 @@ a {
 }
 
 %h3 {
-    font-family: 'apercu';
+    font-family: 'apercu-light';
     font-size: 36px;
     letter-spacing: 1.5555555556;
 }
@@ -57,22 +57,49 @@ a {
     letter-spacing: 0.6;
 }
 
+%h4-a {
+    font-family: 'apercu-bold';
+    font-size: 24px;
+    letter-spacing: 0.6;
+}
+
 %h5 {
     font-size: 20px;
     font-weight: bold;
 }
 
-
 @include media($tablet) {
 
-    %h1 {
-        font-size: 15px;
+    %big {
+        font-size: 120px;
     }
 }
 
 @include media($phablet) {
 
-    %h1 {
-        font-size: 12px;
+    %big {
+        font-size: 60px;
+    }
+
+    %h1,
+    %h1-a {
+        font-size: 30px;
+    }
+
+    %h3,
+    %h3-a {
+        font-size: 22px;
+    }
+
+    %h4,
+    %h4-a {
+        font-size: 17px;
+    }
+}
+
+@include media($mobile) {
+
+    %big {
+        font-size: 35px;
     }
 }

@@ -15,7 +15,7 @@
 }
 
 %h-padding {
-    @include padding(null $site-gutter);
+    @include padding(null 40px);
 }
 
 %v-padding {

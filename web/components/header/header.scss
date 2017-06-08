@@ -1,26 +1,40 @@
 .header {
     background-color: rgba($blue, 0.5);
     color: $teal;
-    text-align: center;
 }
 
 
 .header__inner {
     @extend %h-padding;
+    text-align: center;
 }
 
-.header__title {
-    @extend %h2;
-    position: relative;
+.header__logo {
+    display: block;
+    height: 82px;
     padding-top: 24px;
+    position: relative;
+
+    img {
+        height: 100%;
+    }
+
+    @include media($phablet) {
+        height: 72px;
+        padding-top: 16px;
+    }
 }
 
 .header__menu {
     margin-top: 24px;
+
+    @include media($phablet) {
+        margin-top: 10px;
+    }
 }
 
 .header__link {
-    @extend %h4;
+    @extend %h4-a;
     @include padding(7px 5px);
     color: $teal;
 
