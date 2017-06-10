@@ -18,6 +18,10 @@
     position: relative;
     top: 2px;
     z-index: 1;
+
+    @include media($phablet) {
+        @include svg(74px, 86px);
+    }
 }
 
 .gifts__title {
@@ -30,12 +34,21 @@
     margin-top: 44px;
 }
 
+.gifts__linksb {
+    margin-top: 40px;
+}
+
 .gifts__link {
+    @include padding(40px null);
     text-align: center;
     display: block;
 
     & + & {
         border-top: 1px solid $dijon;
+    }
+
+    @include media($phablet) {
+        @include padding(20px null);
     }
 }
 
@@ -45,6 +58,7 @@
 
 .gift__desc {
     @extend %h4-a;
+    margin-top: 5px;
 }
 
 .gift__title,

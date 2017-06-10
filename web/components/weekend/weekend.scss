@@ -13,8 +13,8 @@
 
 .weekend__image-container {
     margin-bottom: 20px;
-    width: 100%;
     text-align: center;
+    width: 100%;
 }
 
 .weekend__image {
@@ -23,6 +23,10 @@
     position: relative;
     top: 2px;
     z-index: 1;
+
+    @include media($phablet) {
+        @include svg(65px, 65px);
+    }
 }
 
 .weekend__benchmarks__title,
@@ -45,6 +49,10 @@
 .weekend__description {
     @extend %h3;
     margin-bottom: 100px;
+
+    @include media($phablet) {
+        margin-bottom: 40px;
+    }
 }
 
 .weekend__benchmarks__title {
@@ -59,9 +67,10 @@
     @include display(flex);
     @include flex-wrap(wrap);
     @include outer-container;
+    @include padding(40px null);
 
-    & + & {
-        margin-top: 75px;
+    @include media($phablet) {
+        @include padding(20px null);
     }
 }
 
@@ -82,6 +91,10 @@
 .weekend__benchmarks__description {
     @extend %h4-a;
     margin-bottom: 35px;
+
+    @include media($phablet) {
+        margin-bottom: 10px;
+    }
 }
 
 .weekend__benchmarks__body {

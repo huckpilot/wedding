@@ -17,6 +17,14 @@
     @extend %h3;
 }
 
+.body-segment {
+    display: block;
+
+    & + & {
+        margin-top: 20px;
+    }
+}
+
 .closing-sendoff,
 .closing-name {
     text-align: center;
@@ -24,10 +32,18 @@
 
 .closing-sendoff {
     @extend %h1;
+    margin-top: 80px;
 }
 
 .closing-name {
     @extend %h1;
+}
+
+.closing__image__container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 80px;
 }
 
 .closing__image {

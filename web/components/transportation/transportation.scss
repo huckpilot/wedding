@@ -18,6 +18,10 @@
     position: relative;
     top: 2px;
     z-index: 1;
+
+    @include media($phablet) {
+        @include svg(101px, 79px);
+    }
 }
 
 .transportation__title {
@@ -36,4 +40,8 @@
 .transportation__note {
     @extend %h4-a;
     margin-top: 46px;
+}
+
+.transportation__item {
+    margin-top: 44px;
 }

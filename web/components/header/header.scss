@@ -3,7 +3,6 @@
     color: $teal;
 }
 
-
 .header__inner {
     @extend %h-padding;
     text-align: center;
@@ -20,7 +19,7 @@
     }
 
     @include media($phablet) {
-        height: 72px;
+        height: 62px;
         padding-top: 16px;
     }
 }
@@ -29,6 +28,7 @@
     margin-top: 24px;
 
     @include media($phablet) {
+        display: none;
         margin-top: 10px;
     }
 }
@@ -40,5 +40,14 @@
 
     & + & {
         margin-left: 27px;
+    }
+
+    @include media($phablet) {
+        @include padding(20px 5px);
+        display: inline-block;
+
+        & + & {
+            margin-left: 7px;
+        }
     }
 }

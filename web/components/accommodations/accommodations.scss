@@ -40,4 +40,8 @@
     & + & {
         border-top: 1px solid $mint;
     }
+
+    @include media($phablet) {
+        @include padding(20px null);
+    }
 }

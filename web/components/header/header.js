@@ -1,4 +1,4 @@
-/* global angular */
+/* global angular, $ */
 angular.module('ua5App')
     .directive('header', [function() {
         return {
@@ -19,6 +19,12 @@ angular.module('ua5App')
                     name: 'gifts',
                     url: 'gifts'
                 }];
+
+                $('#weekend--button').click(function() {
+                    $('html, body').animate({
+                        scrollTop: $('#weekend').offset().top
+                    }, 2000);
+                });
             }
         };
     }])

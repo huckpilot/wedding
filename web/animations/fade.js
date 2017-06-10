@@ -2,7 +2,7 @@
 angular.module('ua5App')
     // Fade out old state then fade in the new state
     .animation('.fade', [function() {
-        var FADE_SPEED = 0.5;
+        var FADE_SPEED = 0;
         return {
             enter: function(element, doneFn) {
                 TweenMax.to(element, FADE_SPEED, {
