@@ -11,7 +11,7 @@ angular.module('ua5App')
 
                 $scope.cities = [
                     {
-                        title: 'San Francisco',
+                        title: 'Oakland',
                         hotels: [
                             {
                                 name: 'Clarion Hotel Downtown Oakland City Center',

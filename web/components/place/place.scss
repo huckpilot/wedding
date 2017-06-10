@@ -1,3 +1,114 @@
 .place {
+    display: block;
+}
 
+.place__title {
+    cursor: pointer;
+    @extend %h1;
+}
+
+.place__image {
+    float: right;
+    position: relative;
+    top: 4px;
+
+    @include media($phablet) {
+        top: 1px;
+    }
+}
+
+.place__icon {
+    @include svg(50px, 50px);
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    z-index: 1;
+
+    @include media($phablet) {
+        @include svg(30px, 30px);
+    }
+}
+
+.place__details {
+    @include transition(all 0.7s ease);
+    overflow: hidden;
+    max-height: 0;
+
+    &.place__details--open {
+        @include transition(all 0.7s ease);
+        max-height: 100em;
+    }
+
+    @include media($phablet) {
+        width: 100%;
+    }
+}
+
+.place__details__inner {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include outer-container;
+    margin-top: 50px;
+
+    & + & {
+        margin-top: 75px;
+    }
+
+    @include media($phablet) {
+
+        margin-top: 30px;
+
+        & + & {
+            margin-top: 50px;
+        }
+    }
+}
+
+.place__details__name {
+    @extend %h3-a;
+    padding-right: 20px;
+
+    @include media($phablet) {
+        padding-right: 0;
+    }
+}
+
+.place__details__hotel__location {
+    @extend %h4-a;
+}
+
+.place__details__name,
+.place__details__hotel-group {
+    display: block;
+    width: 50%;
+
+    @include media($phablet) {
+        width: 100%;
+    }
+}
+
+.place__details__hotel-group {
+    @include clearfix;
+    position: relative;
+}
+
+.place__details__hotel-info,
+.place__details__hotel__book {
+    float: left;
+    width: 50%;
+
+    @include media($phablet) {
+        width: 100%;
+    }
+}
+
+.place__details__hotel__book {
+    @extend %h3;
+    float: right;
+    text-align: right;
+
+    @include media($phablet) {
+        float: left;
+        text-align: left;
+    }
 }

@@ -34,13 +34,10 @@
     @extend %h1;
 }
 
-.accomodations__city__options {
-    @include transition(all 2s ease);
-    overflow: hidden;
-    max-height: 0;
+.accomodations__city-item {
+    @include padding(40px null);
 
-    &.accomodations__city__options--open {
-        @include transition(all 2s ease);
-        max-height: 50em;
+    & + & {
+        border-top: 1px solid $mint;
     }
 }

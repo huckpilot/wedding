@@ -12,6 +12,7 @@
 }
 
 .weekend__image-container {
+    margin-bottom: 20px;
     width: 100%;
     text-align: center;
 }
@@ -37,22 +38,31 @@
 
 .weekend__title {
     @extend %h1;
+    margin-bottom: 44px;
     text-align: center;
 }
 
 .weekend__description {
     @extend %h3;
-    margin-top: 44px;
+    margin-bottom: 100px;
 }
 
 .weekend__benchmarks__title {
     @extend %h3-a;
 }
 
+.weekend__benchmarks__title--two {
+    margin-top: 40px;
+}
+
 .weekend__benchmark {
     @include display(flex);
     @include flex-wrap(wrap);
     @include outer-container;
+
+    & + & {
+        margin-top: 75px;
+    }
 }
 
 .weekend__benchmarks__date,
@@ -67,4 +77,13 @@
 
 .weekend__benchmarks__date {
     @extend %h1;
+}
+
+.weekend__benchmarks__description {
+    @extend %h4-a;
+    margin-bottom: 35px;
+}
+
+.weekend__benchmarks__body {
+    @extend %h5;
 }

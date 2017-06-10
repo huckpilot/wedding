@@ -7,9 +7,7 @@ angular.module('ua5App')
             $scope: {
                 placeData: '='
             },
-            link: function($scope, element, attrs) {
-                console.log($scope.city);
-            }
+            link: function($scope, element, attrs) {}
         };
     }])
 ;

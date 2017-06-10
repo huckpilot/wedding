@@ -1,31 +1,41 @@
-<a
-    class="accomodations__city"
-    ng-click="open()">
-    <div class="accomodations__city__title">
-        {{ city.title }}
-    </div>
+<div class="place">
     <div
-        class="accomodations__city__options"
-        ng-class="{'accomodations__city__options--open': openBool}">
-        <div
-            class="accomodations__city__option"
-            ng-repeat="hotel in city.hotels">
-            <div class="accomodations__city__option__name">
-                {{ hotel.name }}
+        class="place__title"
+        ng-click="open()">
+        <span>
+            {{ city.title }}
+        </span>
+        <div class="place__image">
+            <div
+                class="place__icon"
+                ng-include="'assets/img/plus.svg'">
             </div>
-            <div class="accomodations__city__option__details">
-                <span class="accomodations__city__option__location">
-                    {{ hotel.location }}
-                </span>
-                <span class="accomodations__city__option__price">
-                    {{ hotel.price }}
-                </span>
-            </div>
-            <a
-                class="accomodations__city__option__book"
-                ng-href="{{ hotel.url }}">
-                Book it!
-            </a>
         </div>
     </div>
-</a>
+    <div
+        class="place__details"
+        ng-class="{'place__details--open': openBool}">
+        <div
+            class="place__details__inner"
+            ng-repeat="hotel in city.hotels">
+            <div class="place__details__name">
+                {{ hotel.name }}
+            </div>
+            <div class="place__details__hotel-group">
+                <div class="place__details__hotel-info">
+                    <div class="place__details__hotel__location">
+                        {{ hotel.location }}
+                    </div>
+                    <div class="place__details__hotel__price">
+                        {{ hotel.price }}
+                    </div>
+                </div>
+                <a
+                    class="place__details__hotel__book"
+                    ng-href="{{ hotel.url }}">
+                    Book it!
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
