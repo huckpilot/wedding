@@ -1,8 +1,8 @@
-@include font-face('apercu', '../fonts/Apercu/apercu', $file-formats: eot ttf woff);
-@include font-face('apercu-light', '../fonts/Apercu/apercu-light', $file-formats: eot ttf woff);
-@include font-face('apercu-medium', '../fonts/Apercu/apercu-medium', $file-formats: eot ttf woff);
-@include font-face('apercu-mono', '../fonts/Apercu/apercu-mono', $file-formats: eot ttf woff);
-@include font-face('apercu-bold', '../fonts/Apercu/apercu-bold', $file-formats: eot ttf woff);
+@include font-face('apercu', '../assets/fonts/apercu/apercu', $file-formats: ttf);
+@include font-face('apercu-light', '../assets/fonts/apercu/apercu-light', $file-formats: ttf);
+@include font-face('apercu-medium', '../assets/fonts/apercu/apercu-medium', $file-formats: ttf);
+@include font-face('apercu-mono', '../assets/fonts/apercu/apercu-mono', $file-formats: ttf);
+@include font-face('apercu-bold', '../assets/fonts/apercu/apercu-bold', $file-formats: ttf);
 
 // Reset headings
 h1,
