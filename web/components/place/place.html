@@ -15,6 +15,34 @@
     <div
         class="place__details"
         ng-class="{'place__details--open': openBool}">
+        <div class="airbnb">
+            <div class="airbnb__title">
+                Airbnb:
+            </div>
+            <div class="airbnb__details">
+                <div class="airbnb__info">
+                    For:
+                    <a
+                        class="airbnb__link"
+                        href="{{ city.airbnbsm }}"
+                        target="_blank">
+                        1-2 people
+                    </a> /
+                    <a
+                        class="airbnb__link"
+                        href="{{ city.airbnblg }}"
+                        target="_blank">
+                        Groups
+                    </a>
+                </div>
+                <div class="airbnb__note">
+                    Note: If you haven't used Airbnb before, use Jonny's referral link <a class="airbnb__link" href="" target="_blank">here</a> to get $40 off.
+                </div>
+            </div>
+        </div>
+        <div class="hotels__title">
+            Hotels:
+        </div>
         <div
             class="place__details__inner"
             ng-repeat="hotel in city.hotels">
@@ -32,7 +60,8 @@
                 </div>
                 <a
                     class="place__details__hotel__book"
-                    ng-href="{{ hotel.url }}">
+                    ng-href="{{ hotel.url }}"
+                    target="_blank">
                     Book it!
                 </a>
             </div>

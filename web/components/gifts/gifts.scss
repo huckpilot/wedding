@@ -40,6 +40,7 @@
 
 .gifts__link {
     @include padding(40px null);
+    color: $dijon;
     text-align: center;
     display: block;
 
