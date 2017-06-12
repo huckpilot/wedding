@@ -28,7 +28,7 @@ angular.module('ua5App')
 
                 $('#accomodations--button').click(function() {
                     $('html, body').animate({
-                        scrollTop: $('#accomodations').offset().top
+                        scrollTop: $('#accommodations').offset().top
                     }, 700);
                 });
 

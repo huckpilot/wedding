@@ -33,10 +33,10 @@ angular.module('ua5App', [
         // Prevents bounce rate of 0.01
         $analyticsProvider.firstPageview(false);
         ngMetaProvider.useTitleSuffix(true);
-        ngMetaProvider.setDefaultTitleSuffix(' | Site Name');
-        ngMetaProvider.setDefaultTitle('Page');
+        ngMetaProvider.setDefaultTitleSuffix(' & jonny');
+        ngMetaProvider.setDefaultTitle('alex');
         ngMetaProvider.setDefaultTag('url', 'URL');
-        ngMetaProvider.setDefaultTag('description', 'Site description');
+        ngMetaProvider.setDefaultTag('description', 'We\'re getting married!');
         ngMetaProvider.setDefaultTag('image', 'URL');
     }])
     .run(['ngMeta', function(ngMeta) {
