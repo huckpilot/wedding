@@ -23,7 +23,25 @@ angular.module('ua5App')
                 $('#weekend--button').click(function() {
                     $('html, body').animate({
                         scrollTop: $('#weekend').offset().top
-                    }, 2000);
+                    }, 700);
+                });
+
+                $('#accomodations--button').click(function() {
+                    $('html, body').animate({
+                        scrollTop: $('#accomodations').offset().top
+                    }, 700);
+                });
+
+                $('#transportation--button').click(function() {
+                    $('html, body').animate({
+                        scrollTop: $('#transportation').offset().top
+                    }, 700);
+                });
+
+                $('#gifts--button').click(function() {
+                    $('html, body').animate({
+                        scrollTop: $('#gifts').offset().top
+                    }, 700);
                 });
             }
         };
